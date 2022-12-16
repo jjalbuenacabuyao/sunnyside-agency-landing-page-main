@@ -5,3 +5,23 @@
 .fraunces {
   @apply font-fraunces font-black;
 }
+
+.text-container {
+  @apply flex flex-col gap-10 py-[4.5rem] px-6 text-center;
+}
+
+.text-container > h2 {
+  @apply text-3xl text-nt-dark-blue;
+}
+
+.text-container > p {
+  @apply text-nt-dark-grayish-blue;
+}
+
+.text-absolute {
+  @apply absolute bottom-16 right-0 left-0 flex flex-col gap-9 px-6 text-center;
+}
+
+.text-absolute > h2 {
+  @apply text-3xl;
+}
