@@ -16,7 +16,10 @@ module.exports = {
       fontFamily: {
         'barlow': ['Barlow', 'sans-serif'],
         'fraunces': ['Fraunces', 'serif'],
-      }
+      },
+      backgroundImage: {
+        'hamburger': 'url(../images/icon-hamburger.svg)'
+      },
     },
   },
   plugins: [],
