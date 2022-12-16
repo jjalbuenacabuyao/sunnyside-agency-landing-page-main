@@ -12,20 +12,30 @@
       href="./src/images/favicon-32x32.png"
     />
 
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./src/css/style.css" />
 
     <title>Frontend Mentor | Sunnyside agency landing page</title>
   </head>
-  <body class="font-barlow text-lg font-semibold">
+  <body class="relative font-barlow text-lg font-semibold">
     <!-- HEADER -->
-    <header>
+    <header
+      class="absolute top-0 left-0 right-0 z-50 flex items-center justify-between py-9 px-6"
+    >
       <a href="#">
         <img src="./src/images/logo.svg" alt="sunnyside logo" />
       </a>
 
-      <button></button>
+      <button class="h-[1.125rem] w-6 bg-hamburger"></button>
 
-      <nav aria-label="Main Navigation">
+      <nav aria-label="Main Navigation" class="fixed inset-0 -translate-y-full">
         <ul>
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
@@ -38,10 +48,29 @@
     <!-- MAIN CONTENT -->
     <main>
       <!-- HERO SECTION -->
-      <section>
-        <div>
-          <h1>We are creatives</h1>
-          <img src="./src/images/icon-arrow-down.svg" alt="arrow down icon" />
+      <section class="relative">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="" />
+          <img
+            class="min-h-screen w-full"
+            src="./src/images/mobile/image-header.jpg"
+            alt="Image of an orange in blue background"
+          />
+        </picture>
+
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center"
+        >
+          <h1
+            class="fraunces pb-14 text-3xl uppercase tracking-[9px] text-white"
+          >
+            We are creatives
+          </h1>
+          <img
+            class="m-auto"
+            src="./src/images/icon-arrow-down.svg"
+            alt="arrow down icon"
+          />
         </div>
       </section>
 
@@ -61,13 +90,13 @@
         </div>
 
         <div>
-          <h2>Transform your brand</h2>
+          <h2 class="fraunces">Transform your brand</h2>
           <p>
             We are a full-service creative agency specializing in helping brands
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
           </p>
-          <a href="#">Learn more</a>
+          <a href="#" class="font-fraunces font-bold">Learn more</a>
         </div>
 
         <div>
@@ -84,13 +113,13 @@
         </div>
 
         <div>
-          <h2>Stand out to the right audience</h2>
+          <h2 class="fraunces">Stand out to the right audience</h2>
           <p>
             Using a collaborative formula of designers, researchers,
             photographers, videographers, and copywriters, we'll build and
             extend your brand in digital places.
           </p>
-          <a href="#">Learn more</a>
+          <a href="#" class="font-fraunces font-bold">Learn more</a>
         </div>
 
         <div>
@@ -104,7 +133,7 @@
               alt="A photo of two cherries in cyan background"
             />
           </picture>
-          <h2>Graphic design</h2>
+          <h2 class="fraunces">Graphic design</h2>
           <p>
             Great design makes you memorable. We deliver artwork that
             underscores your brand message and captures potential clients'
@@ -123,7 +152,7 @@
               alt="A photo of an orange in blue background"
             />
           </picture>
-          <h2>Photography</h2>
+          <h2 class="fraunces">Photography</h2>
           <p>
             Increase your credibility by getting the most stunning, high-quality
             photos that improve your business image.
@@ -133,25 +162,34 @@
 
       <!-- TESTIMONIAL SECTION -->
       <section>
-        <h2>Client testimonials</h2>
+        <h2 class="fraunces">Client testimonials</h2>
 
         <div>
-          <img src="./src/images/image-emily.jpg" alt="Photo of Emily">
-          <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <img src="./src/images/image-emily.jpg" alt="Photo of Emily" />
+          <p>
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
           <p>Emily R.</p>
           <p>Marketing Director</p>
         </div>
 
         <div>
-          <img src="./src/images/image-thomas.jpg" alt="Photo of Thomas">
-          <p>Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
+          <img src="./src/images/image-thomas.jpg" alt="Photo of Thomas" />
+          <p>
+            Sunnyside's enthusiasm coupled with their keen interest in our
+            brand's success made it a satisfying and enjoyable experience.
+          </p>
           <p>Thomas S.</p>
           <p>Chief Operating Officer</p>
         </div>
 
         <div>
-          <img src="./src/images/image-jennie.jpg" alt="Photo of Jennie">
-          <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <img src="./src/images/image-jennie.jpg" alt="Photo of Jennie" />
+          <p>
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
           <p>Jennie F.</p>
           <p>Business Owner</p>
         </div>
@@ -164,7 +202,7 @@
     <!-- FOOTER -->
     <footer>
       <a href="#">
-        <img src="./src/images/logo.svg" alt="Sunnyside logo">
+        <img src="./src/images/logo.svg" alt="Sunnyside logo" />
       </a>
 
       <nav aria-label="Footer Navigation">
@@ -176,10 +214,10 @@
       </nav>
 
       <div>
-        <img src="./src/images/icon-facebook.svg" alt="Logo of Facebook">
-        <img src="./src//images/icon-instagram.svg" alt="Logo of Instagram">
-        <img src="./src/images/icon-twitter.svg" alt="Logo of Twitter">
-        <img src="./src/images/icon-pinterest.svg" alt="Logo of Pinterest">
+        <img src="./src/images/icon-facebook.svg" alt="Logo of Facebook" />
+        <img src="./src//images/icon-instagram.svg" alt="Logo of Instagram" />
+        <img src="./src/images/icon-twitter.svg" alt="Logo of Twitter" />
+        <img src="./src/images/icon-pinterest.svg" alt="Logo of Pinterest" />
       </div>
     </footer>
   </body>
