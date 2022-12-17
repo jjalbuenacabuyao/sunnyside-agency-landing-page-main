@@ -7,7 +7,7 @@
 }
 
 .nav {
-  @apply fixed inset-0 m-auto flex h-max -translate-y-[100vh] flex-col gap-10 bg-white py-11 text-sm text-nt-dark-grayish-blue lg:static lg:translate-y-0 lg:bg-transparent lg:flex-row lg:p-0 lg:justify-start lg:m-0 lg:text-white;
+  @apply fixed inset-0 m-auto flex h-max -translate-y-[100vh] flex-col gap-10 bg-white py-11 text-sm text-nt-dark-grayish-blue lg:static lg:m-0 lg:translate-y-0 lg:flex-row lg:justify-start lg:bg-transparent lg:p-0 lg:text-white;
   width: calc(100% - 3rem);
   @apply lg:w-auto;
   transition: transform 300ms ease-in;
@@ -23,6 +23,24 @@
 
 .text-container {
   @apply m-auto flex flex-col gap-10 py-[4.5rem] px-6 lg:p-40 lg:text-left;
+}
+
+.text-container a {
+  @apply relative z-10;
+}
+
+.text-container a::after {
+  content: "";
+  z-index: -5;
+  display: block;
+  width: 7rem;
+  height: 10px;
+  border-radius: 5px;
+  background-color: hsl(7, 99%, 70%);
+  position: absolute;
+  right: 33%;
+  top: 16px;
+  opacity: .5;
 }
 
 .text-container > h2 {
