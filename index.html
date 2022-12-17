@@ -78,8 +78,8 @@
       </section>
 
       <!-- FEATURES SECTION -->
-      <section>
-        <div>
+      <section class="feature md:grid md:grid-cols-2">
+        <div class="md:order-2">
           <picture>
             <source
               media="(min-width: 1440px)"
@@ -92,7 +92,7 @@
           </picture>
         </div>
 
-        <div class="text-container">
+        <div class="text-container md:order-1">
           <h2 class="fraunces">Transform your brand</h2>
           <p>
             We are a full-service creative agency specializing in helping brands
@@ -102,7 +102,7 @@
           <a href="#" class="font-fraunces font-bold">Learn more</a>
         </div>
 
-        <div>
+        <div class="md:order-3">
           <picture>
             <source
               media="(min-width: 1440px)"
@@ -115,7 +115,7 @@
           </picture>
         </div>
 
-        <div class="text-container">
+        <div class="text-container md:order-4">
           <h2 class="fraunces">Stand out to the right audience</h2>
           <p>
             Using a collaborative formula of designers, researchers,
@@ -125,7 +125,7 @@
           <a href="#" class="font-fraunces font-bold">Learn more</a>
         </div>
 
-        <div class="relative text-pr-cyan">
+        <div class="relative text-pr-cyan md:order-5">
           <picture>
             <source
               media="(min-width: 1440px)"
@@ -146,7 +146,7 @@
           </div>
         </div>
 
-        <div class="relative text-pr-dark-blue">
+        <div class="relative text-pr-dark-blue md:order-6">
           <picture>
             <source
               media="(min-width: 1440px)"
@@ -168,9 +168,9 @@
       </section>
 
       <!-- TESTIMONIAL SECTION -->
-      <section class="flex flex-col gap-16 pt-16 pb-24">
+      <section class="flex flex-col gap-16 pt-16 pb-24 md:grid md:grid-cols-4">
         <h2
-          class="fraunces text-base uppercase tracking-[6px] text-nt-grayish-blue"
+          class="fraunces text-base uppercase tracking-[6px] text-nt-grayish-blue md:col-span-4"
         >
           Client testimonials
         </h2>
@@ -203,7 +203,7 @@
           <p>Chief Operating Officer</p>
         </div>
 
-        <div class="testimonial-wrapper">
+        <div class="testimonial-wrapper md:col-start-2">
           <img
             class="testimonial-img"
             src="./src/images/image-jennie.jpg"
@@ -219,7 +219,7 @@
       </section>
 
       <!-- SHOWCASE SECTION -->
-      <section class="grid grid-cols-2">
+      <section class="showcase grid grid-cols-2">
         <div>
           <picture>
             <source
@@ -289,7 +289,7 @@
       </a>
 
       <nav aria-label="Footer Navigation" class="w-full mt-10 mb-24">
-        <ul class="flex justify-around items-center">
+        <ul class="flex justify-around items-center md:justify-evenly">
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Projects</a></li>

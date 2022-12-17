@@ -6,6 +6,10 @@
   @apply font-fraunces font-black;
 }
 
+.feature img {
+  @apply h-full md:object-cover;
+}
+
 .text-container {
   @apply flex flex-col gap-10 py-[4.5rem] px-6;
 }
@@ -27,7 +31,7 @@
 }
 
 .testimonial-wrapper {
-  @apply flex flex-col items-center px-6 text-nt-dark-blue;
+  @apply flex flex-col items-center px-6 text-nt-dark-blue md:col-span-2;
 }
 
 .testimonial-wrapper > :nth-child(2) {
@@ -44,4 +48,8 @@
 
 .testimonial-img {
   @apply w-20 rounded-full;
+}
+
+.showcase img {
+  @apply w-full;
 }
