@@ -25,3 +25,23 @@
 .text-absolute > h2 {
   @apply text-3xl;
 }
+
+.testimonial-wrapper {
+  @apply flex flex-col items-center px-6 text-nt-dark-blue;
+}
+
+.testimonial-wrapper > :nth-child(2) {
+  @apply my-10;
+}
+
+.testimonial-wrapper > :last-child {
+  @apply mt-4 text-nt-dark-grayish-blue text-sm;
+}
+
+.name {
+  @apply font-fraunces font-black;
+}
+
+.testimonial-img {
+  @apply w-20 rounded-full;
+}

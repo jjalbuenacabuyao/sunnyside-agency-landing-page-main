@@ -24,7 +24,7 @@
 
     <title>Frontend Mentor | Sunnyside agency landing page</title>
   </head>
-  <body class="relative font-barlow text-lg font-semibold text-center">
+  <body class="relative text-center font-barlow text-lg font-semibold">
     <!-- HEADER -->
     <header
       class="absolute top-0 left-0 right-0 z-50 flex items-center justify-between py-9 px-6"
@@ -48,11 +48,14 @@
     <!-- MAIN CONTENT -->
     <main>
       <!-- HERO SECTION -->
-      <section class="relative">
+      <section class="relative max-h-screen">
         <picture>
-          <source media="(min-width: 1440px)" srcset="" />
+          <source
+            media="(min-width: 1440px)"
+            srcset="./src/images/desktop/image-header.jpg"
+          />
           <img
-            class="min-h-screen w-full"
+            class="max-h-screen w-screen object-cover"
             src="./src/images/mobile/image-header.jpg"
             alt="Image of an orange in blue background"
           />
@@ -165,36 +168,50 @@
       </section>
 
       <!-- TESTIMONIAL SECTION -->
-      <section>
-        <h2 class="fraunces">Client testimonials</h2>
+      <section class="py-16 flex flex-col gap-16">
+        <h2 class="fraunces text-base uppercase tracking-[6px] text-nt-grayish-blue">
+          Client testimonials
+        </h2>
 
-        <div>
-          <img src="./src/images/image-emily.jpg" alt="Photo of Emily" />
+        <div class="testimonial-wrapper">
+          <img
+            class="testimonial-img"
+            src="./src/images/image-emily.jpg"
+            alt="Photo of Emily"
+          />
           <p>
             We put our trust in Sunnyside and they delivered, making sure our
             needs were met and deadlines were always hit.
           </p>
-          <p>Emily R.</p>
+          <p class="name">Emily R.</p>
           <p>Marketing Director</p>
         </div>
 
-        <div>
-          <img src="./src/images/image-thomas.jpg" alt="Photo of Thomas" />
+        <div class="testimonial-wrapper">
+          <img
+            class="testimonial-img"
+            src="./src/images/image-thomas.jpg"
+            alt="Photo of Thomas"
+          />
           <p>
             Sunnyside's enthusiasm coupled with their keen interest in our
             brand's success made it a satisfying and enjoyable experience.
           </p>
-          <p>Thomas S.</p>
+          <p class="name">Thomas S.</p>
           <p>Chief Operating Officer</p>
         </div>
 
-        <div>
-          <img src="./src/images/image-jennie.jpg" alt="Photo of Jennie" />
+        <div class="testimonial-wrapper">
+          <img
+            class="testimonial-img"
+            src="./src/images/image-jennie.jpg"
+            alt="Photo of Jennie"
+          />
           <p>
             Incredible end result! Our sales increased over 400% when we worked
             with Sunnyside. Highly recommended!
           </p>
-          <p>Jennie F.</p>
+          <p class="name">Jennie F.</p>
           <p>Business Owner</p>
         </div>
       </section>
