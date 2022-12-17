@@ -7,8 +7,9 @@
 }
 
 .nav {
-  @apply fixed m-auto inset-0 flex h-max w-max -translate-y-[200%] flex-col gap-10 bg-white py-11 text-sm text-nt-dark-grayish-blue;
+  @apply fixed inset-0 m-auto flex h-max -translate-y-[100vh] flex-col gap-10 bg-white py-11 text-sm text-nt-dark-grayish-blue lg:static lg:translate-y-0 lg:bg-transparent lg:flex-row lg:p-0 lg:justify-start lg:m-0 lg:text-white;
   width: calc(100% - 3rem);
+  @apply lg:w-auto;
   transition: transform 300ms ease-in;
 }
 
@@ -21,7 +22,7 @@
 }
 
 .text-container {
-  @apply flex flex-col gap-10 py-[4.5rem] px-6;
+  @apply m-auto flex flex-col gap-10 py-[4.5rem] px-6 lg:p-40 lg:text-left;
 }
 
 .text-container > h2 {
@@ -33,7 +34,7 @@
 }
 
 .text-absolute {
-  @apply absolute bottom-16 right-0 left-0 flex flex-col gap-9 px-6;
+  @apply absolute bottom-16 right-0 left-0 flex flex-col gap-9 px-6 lg:px-40;
 }
 
 .text-absolute > h2 {
@@ -41,7 +42,7 @@
 }
 
 .testimonial-wrapper {
-  @apply flex flex-col items-center px-6 text-nt-dark-blue md:col-span-2;
+  @apply flex flex-col items-center px-6 text-nt-dark-blue md:col-span-2 lg:col-span-1;
 }
 
 .testimonial-wrapper > :nth-child(2) {
@@ -62,4 +63,8 @@
 
 .showcase img {
   @apply w-full;
+}
+
+.footer > * {
+  @apply max-w-sm;
 }
