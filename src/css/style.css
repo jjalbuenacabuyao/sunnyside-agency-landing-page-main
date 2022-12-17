@@ -6,6 +6,11 @@
   @apply font-fraunces font-black;
 }
 
+.nav {
+  @apply fixed inset-0 m-auto h-max bg-white py-11 flex flex-col gap-10 text-sm text-nt-dark-grayish-blue -translate-y-[200%];
+  width: calc(100% - 3rem);
+}
+
 .feature img {
   @apply h-full md:object-cover;
 }
