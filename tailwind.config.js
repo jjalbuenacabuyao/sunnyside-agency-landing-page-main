@@ -20,6 +20,9 @@ module.exports = {
       backgroundImage: {
         'hamburger': 'url(../images/icon-hamburger.svg)'
       },
+      screens: {
+        '2xl': '1440px',
+      },
     },
   },
   plugins: [],

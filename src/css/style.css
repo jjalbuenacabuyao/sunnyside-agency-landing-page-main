@@ -22,7 +22,7 @@
 }
 
 .text-container {
-  @apply m-auto flex flex-col gap-10 py-[4.5rem] px-6 lg:p-40 lg:text-left;
+  @apply m-auto flex flex-col gap-10 py-[4.5rem] px-6 2xl:p-40 lg:text-left;
 }
 
 .text-container > h2 {
@@ -34,7 +34,7 @@
 }
 
 .text-absolute {
-  @apply absolute bottom-16 right-0 left-0 flex flex-col gap-9 px-6 lg:px-40;
+  @apply absolute bottom-16 right-0 left-0 flex flex-col gap-9 px-6 2xl:px-40;
 }
 
 .text-absolute > h2 {
@@ -42,7 +42,7 @@
 }
 
 .testimonial-wrapper {
-  @apply flex flex-col items-center px-6 text-nt-dark-blue md:col-span-2 lg:col-span-1;
+  @apply flex flex-col items-center px-6 text-nt-dark-blue md:col-span-2 2xl:col-span-1;
 }
 
 .testimonial-wrapper > :nth-child(2) {
